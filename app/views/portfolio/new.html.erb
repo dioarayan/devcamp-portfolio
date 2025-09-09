@@ -1,0 +1,15 @@
+<h3>Create new Portfolio</h3>
+
+<%= form_tag('/portfolio' , remote: true) do %>
+  <div>
+    <%= label_tag "name", "Name: " %>
+    <%= text_field_tag "name" %>
+  </div>
+  <div>
+    <%= label_tag "description", "Description: " %>
+    <%= text_area_tag "description" %>
+  </div>
+  <div>
+    <%= submit_tag "Save Portfolio" %>
+  </div>
+<% end %>
