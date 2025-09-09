@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1> Portfolio </h1>
+
+<div id="portfolio">
+  <% @portfolios.each do |portfolio| %>
+    <%= render portfolio %>
+    <p>
+      <%= link_to "View portfolio", portfolio %>
+    </p>
+  <% end %>
+</div>
+
+<%#= link_to "New blog", new_blog_path %>
