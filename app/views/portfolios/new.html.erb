@@ -16,5 +16,16 @@
     <%= f.text_area :body, class: "form-control" %>
   </div>
 
+  <ul>
+    <%= f.fields_for :technologies do |technology_form| %>
+      <div class="form-group">
+      <li>
+        <%= technology_form.label :name, "Technology" %>
+        <%= technology_form.text_field :name, class: "form-control" %>
+      </li>
+      </div>
+    <% end %>
+  </ul>
+  
   <%= f.submit "Create Portfolio Item", class: "btn btn-primary" %>
 <% end %>
