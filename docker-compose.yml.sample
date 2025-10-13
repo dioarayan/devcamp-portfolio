@@ -17,7 +17,7 @@ services:
       - .:/app
       - bundle_path:/usr/local/bundle
     working_dir: /app
-    command: bundle exec rails server -b 0.0.0.0 -p 3000
+    command: sh -c "rm -f tmp/pids/server.pid && bundle exec rails server -b 0.0.0.0 -p 3000 --pid tmp/pids/server.pid"
     depends_on:
       - db
     ports: 

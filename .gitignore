@@ -36,3 +36,5 @@
 
 /docker-compose.yml
 /config/database.yml
+
+docker-compose.yml
