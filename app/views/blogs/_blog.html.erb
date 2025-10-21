@@ -9,4 +9,9 @@
     <%= blog.body %>
   </p>
 
+  <small>
+    Published
+    <%= distance_of_time_in_words(blog.created_at, Time.now) %>
+    ago
+  </small>
 </div>
