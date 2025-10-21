@@ -1,0 +1,9 @@
+  <div id="<%= dom_id portfolio_item %>">
+    <h2><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h2>
+    <p><%= portfolio_item.subtitle %></p>
+    <p><%= portfolio_item.body %></p>
+    <%= image_tag portfolio_item.main_image if portfolio_item.main_image.present? %>
+    <%= image_tag portfolio_item.thumb_image if portfolio_item.thumb_image.present? %>
+    <%= link_to "Edit", edit_portfolio_path(portfolio_item) %>
+    <%= button_to "Delete", portfolio_path(portfolio_item), method: :delete, data: { turbo_confirm: 'Are you sure?'} %>
+  </div>
