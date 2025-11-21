@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 
 gem 'friendly_id', '~> 5.5.0'
 gem 'devise', '~> 4.9', '>= 4.9.4'
+gem 'petergate', '~> 3.0', '>= 3.0.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
