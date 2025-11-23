@@ -326,8 +326,8 @@ DEPENDENCIES
   friendly_id (~> 5.5.0)
   importmap-rails
   jbuilder
-  petergate (~> 3.0, >= 3.0.1)
   jquery-rails
+  petergate (~> 3.0, >= 3.0.1)
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.1)
